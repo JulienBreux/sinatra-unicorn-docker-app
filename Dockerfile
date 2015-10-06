@@ -1,7 +1,7 @@
 ##
 # BUILD : docker build --pull=true --no-cache --rm -t julienbreux/unicorn-app:1.0 . && docker tag julienbreux/unicorn-app:1.0 julienbreux/unicorn-app:latest
 # SHIP  : docker push julienbreux/unicorn-app:1.0 && docker push julienbreux/unicorn-app:latest
-# RUN   : docker run -ti --rm julienbreux/unicorn-app:1.0
+# RUN   : docker run -ti --rm -p 80:8080 julienbreux/unicorn-app:1.0
 ##
 
 FROM ruby:2.2-onbuild
