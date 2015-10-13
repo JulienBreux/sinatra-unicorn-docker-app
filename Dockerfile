@@ -7,7 +7,7 @@
 FROM ruby:2.2-onbuild
 MAINTAINER Julien Breux "julien.breux@gmail.com"
 
-# Install Rails App
+# Install app
 WORKDIR /usr/src/app
 ADD Gemfile /usr/src/Gemfile
 ADD Gemfile.lock /usr/src/Gemfile.lock
